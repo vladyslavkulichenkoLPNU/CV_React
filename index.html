@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Vladyslav Kulichenko - CV (React)</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script>
+        const savedTheme = localStorage.getItem('user_theme');
+        const currentHour = new Date().getHours();
+        const isDay = currentHour >= 7 && currentHour < 21;
+        if (savedTheme === 'light' || (!savedTheme && isDay)) {
+          document.documentElement.classList.add('light');
+        }
+    </script>
+  </head>
+  <body 
+    class="
+      font-sans text-lg leading-[1.6]
+      bg-base-bg-d text-p-d
+      light:bg-base-bg-l light:text-p-l
+    "
+  >
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

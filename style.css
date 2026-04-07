@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@custom-variant light (&:where(.light, .light *));
+
+@theme {
+    /* Dark Theme */
+    --color-base-d: hsl(280, 30%, 25%);
+    --color-main-d: hsl(260, 30%, 50%);
+    --color-secondary-d: hsl(240, 30%, 75%);
+
+    --color-base-bg-d: hsl(0, 0%, 0%);
+    --color-main-bg-d: hsl(280, 10%, 5%);
+    --color-secondary-bg-d: hsl(280, 10%, 10%);
+
+    --color-main-hl-d: hsla(260, 50%, 50%, 0.75);
+
+    --color-base-acc-d: hsl(280, 75%, 25%);
+    --color-main-acc-d: hsl(260, 50%, 50%);
+    --color-secondary-acc-d: hsl(240, 25%, 75%);
+
+    --color-h1-d: hsl(0, 0%, 100%);
+    --color-h2-d: hsl(260, 30%, 50%);
+    --color-h3-d: hsl(240, 30%, 50%);
+
+    --color-p-d: hsl(0, 0%, 85%);
+    --color-p-faint-d: hsl(0, 0%, 75%);
+    --color-link-d: hsl(240, 100%, 50%);
+    --color-link-hover-d: hsl(240, 100%, 75%);
+
+    /* Light Theme */
+    --color-base-l: hsl(50, 70%, 75%);
+    --color-main-l: hsl(35, 70%, 50%);
+    --color-secondary-l: hsl(20, 70%, 25%);
+
+    --color-base-bg-l: hsl(0, 0%, 100%);
+    --color-main-bg-l: hsl(50, 10%, 95%);
+    --color-secondary-bg-l: hsl(50, 10%, 90%);
+
+    --color-main-hl-l: hsla(35, 75%, 50%, 0.75);
+
+    --color-base-acc-l: hsl(50, 75%, 75%);
+    --color-main-acc-l: hsl(35, 50%, 50%);
+    --color-secondary-acc-l: hsl(20, 25%, 25%);
+
+    --color-h1-l: hsl(0, 0%, 0%);
+    --color-h2-l: hsl(35, 70%, 50%);
+    --color-h3-l: hsl(20, 70%, 50%);
+
+    --color-p-l: hsl(0, 0%, 15%);
+    --color-p-faint-l: hsl(0, 0%, 25%);
+    --color-link-l: hsl(20, 100%, 50%);
+    --color-link-hover-l: hsl(20, 100%, 25%);
+}
+
+* {
+    box-sizing: border-box;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
