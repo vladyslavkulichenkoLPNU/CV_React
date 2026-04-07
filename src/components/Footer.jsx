@@ -30,7 +30,7 @@ export function Footer() {
 const styles = {
   container: " \
     flex gap-[15px] max-[600px]:flex-col \
-    place-center \
+    place-content-center \
     py-[20px] px-[10px] \
     mt-[10px] \
     text-p-d light:text-p-l \
